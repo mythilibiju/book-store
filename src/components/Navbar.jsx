@@ -7,27 +7,29 @@ function Navbar() {
   return (
     <div
       style={{
-        height: '40px',
-        width: '100%', 
-        maxWidth: '100%',
-        boxSizing: 'border-box',
-        overflowX: 'hidden',
-        backgroundColor: 'lightgrey',
+        height: '50px',
+        backgroundColor: '#3366CC',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
         padding: '0 10px',
-        boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
       }}
     >
       <div style={{ display: 'flex', alignItems: 'center' }}>
-        <Link to="/main" style={{ marginRight: '15px' }}><FaHome size={30} /></Link>
-        <Link to="users" style={{ marginRight: '15px' }}>Manage users</Link>
-        <Link to="book">Manage Books</Link>
+        <Link to="/main" style={{ marginRight: '10px', color: '#FFFFFF', textDecoration: 'none', fontSize: '18px' }}>
+          <FaHome size={24} />
+        </Link>
+        <Link to="users" style={{ marginRight: '10px', color: '#FFFFFF', textDecoration: 'none', fontSize: '16px' }}>
+          Manage Users
+        </Link>
+        <Link to="book" style={{ color: '#FFFFFF', textDecoration: 'none', fontSize: '16px' }}>
+          Manage Books
+        </Link>
       </div>
       <div>
-        <Link to="/">
-          <IoIosLogOut size={30} />
+        <Link to="/" style={{ color: '#FFFFFF', textDecoration: 'none' }}>
+          <IoIosLogOut size={24} />
         </Link>
       </div>
     </div>
